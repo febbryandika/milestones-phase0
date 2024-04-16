@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/script.js"></script>
   </head>
   <body>
     <header class="fixed w-screen top-0 z-20">
@@ -24,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <div class="flex flex-col mt-24 mb-14 z-10">
+        <div id="static" class="flex flex-col mt-24 mb-14 z-10 hidden">
             <div class="w-11/12 mx-auto">
                 <h1 class="text-5xl font-bold text-left">Portfolio</h1>
             </div>
@@ -98,7 +99,7 @@
                         <p class="text-xl font-bold">Over The Moon</p>
                         <p class="text-sm">Bali</p>
                     </div>
-                </a>
+                </button>
                 <button class="shadow-xl rounded-xl bg-black text-white text-left hover:text-amber-500 hover:scale-105">
                     <img src="./assets/img/qual-coffee.jpg" alt="Qual Coffee" class="rounded-t-xl h-80 w-full object-cover object-center border-4 border-black">
                     <div class="p-4">
@@ -113,6 +114,110 @@
                         <p class="text-sm">Jakarta</p>
                     </div>
                 </button>
+            </div>
+        </div>
+        <div id="dynamic" class="mt-24 w-11/12 mx-auto">
+            <div class="flex bg-gray-200 border-2 border-black text-white">
+                <div class="flex flex-col overflow-y-auto hover:overflow-scroll w-3/12 h-[50rem] my-auto px-5 gap-4">
+                    <button id="48-street" class="shadow-xl rounded-xl bg-black text-left text-amber-500 scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">48 Street ストリート</p>
+                            <p class="text-sm">Tasikmalaya</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Bagi Kopi Signature</p>
+                            <p class="text-sm">Bandung</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Daruma Brunch House & Coffee</p>
+                            <p class="text-sm">Bogor</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Imadji Coffee</p>
+                            <p class="text-sm">Bali</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Kalibata House 21</p>
+                            <p class="text-sm">Jakarta</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Kedai Kopi Handoko</p>
+                            <p class="text-sm">Bogor</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Kopi Toko Djawa Critical 11</p>
+                            <p class="text-sm">Bandung</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Mahboen Coffee</p>
+                            <p class="text-sm">Malang</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Nest Coffee & Donuts</p>
+                            <p class="text-sm">Yogyakarta</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Over The Moon</p>
+                            <p class="text-sm">Bali</p>
+                        </div>
+                    </button>
+                    <button class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Qual Coffee</p>
+                            <p class="text-sm">Bandung</p>
+                        </div>
+                    </button>
+                    <button id="sedjuk" class="shadow-xl rounded-xl bg-black text-left hover:text-amber-500 hover:scale-105">
+                        <div class="p-4">
+                            <p class="text-xl font-bold">Sedjuk Bakmi & Kopi SCBD</p>
+                            <p class="text-sm">Jakarta</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="flex flex-col w-9/12 px-5 pr-0">
+                    <div class="shadow-xl bg-white text-black text-left h-[53rem]">
+                        <div class="flex overflow-x-scroll gap-2">
+                            <img src="./assets/img/48-street.jpg" alt="48 Street ストリート" class="w-[25rem]">
+                            <img src="./assets/img/48-street.jpg" alt="48 Street ストリート" class="w-[25rem]">
+                            <img src="./assets/img/48-street.jpg" alt="48 Street ストリート" class="w-[25rem]">
+                            <img src="./assets/img/48-street.jpg" alt="48 Street ストリート" class="w-[25rem]">
+                            <img src="./assets/img/48-street.jpg" alt="48 Street ストリート" class="w-[25rem]">
+                        </div>
+                        <div class="ml-5">
+                            <div class="mt-9">
+                                <p class="text-5xl font-bold">48 Street ストリート</p>
+                            </div>
+                            <div class="mt-5">
+                                <p class="text-xl font-bold">Location</p>
+                                <p>Jl. Cikalang Girang No.48,
+                                    Kahuripan, Kec. Tawang,
+                                    Kab. Tasikmalaya, Jawa Barat 46115</p>
+                            </div>
+                            <div class="mt-5">
+                                <p class="text-xl font-bold">Open Hour</p>
+                                <p>Mon-Fri<br>09.00 - 21.00<br><br>Sat-Sun<br>08.00 - 21.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
